@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Inside of span because it overflows on smaller width so I displayed h1 as an flexbox -->
+        <h1 id="topHeader"><span>Lab:</span><span> Pixel</span><span> Art</span><span> Maker</span></h1>
+    </header>
+    <section class="gridSize">
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker">
+            <label for="input_height">Grid Height:</label>
+            <input type="number" id="input_height" name="height" min="1" value="4">
+            <label for="input_width">Grid Width:</label>
+            <input type="number" id="input_width" name="width" min="1" value="4">
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+    </section>
+    <section>
+        <h2>Design Canvas</h2>
+        <table id="pixel_canvas"></table>
+    </section>
+        <script src="designs.js"></script>
+</body>
+</html>
