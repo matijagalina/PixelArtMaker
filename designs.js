@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 		// Disabling right click
 		$(document).bind("contextmenu",function(e){
-	   return false;
+	   		return false;
 	 	});
 
 		// Clear former table canvas before setting up a new
